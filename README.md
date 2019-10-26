@@ -10,8 +10,8 @@ Windows: ``py -3 -m pip install BenBot``<br>
 Linux/macOS: ``python3 -m pip install BenBot``
 
 ### Asynchronous:
-Windows: ``py -3 -m pip install BenBot-async``<br>
-Linux/macOS: ``python3 -m pip install BenBot-async``
+Windows: ``py -3 -m pip install BenBotAsync``<br>
+Linux/macOS: ``python3 -m pip install BenBotAsync``
 
 ## Example:
 ```
