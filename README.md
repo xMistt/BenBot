@@ -5,8 +5,13 @@ Python wrapper for BenBot.
 [![BenBot Version: 0.0.3](https://img.shields.io/pypi/v/BenBot.svg)](https://pypi.org/project/BenBot/)
 
 ## Installing:
+### Synchronous:
 Windows: ``py -3 -m pip install BenBot``<br>
 Linux/macOS: ``python3 -m pip install BenBot``
+
+### Asynchronous:
+Windows: ``py -3 -m pip install BenBot-async``<br>
+Linux/macOS: ``python3 -m pip install BenBot-async``
 
 ## Example:
 ```
@@ -19,4 +24,4 @@ print(BenSearch)
 This would output:<br>
 ```CID_029_Athena_Commando_F_Halloween```
 
-The list of functions is on the Wiki and an async version will be coming soon.
+The list of functions is on the Wiki.
