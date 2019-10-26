@@ -1,5 +1,5 @@
 import aiohttp
-name = 'BenBot-async'
+name = 'BenBotAsync'
 
 BEN_BOT = 'http://benbotfn.tk:8080/api/'
 
