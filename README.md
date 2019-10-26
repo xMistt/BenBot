@@ -5,7 +5,7 @@ Python wrapper for BenBot.
 [![BenBot Version: 0.0.3](https://img.shields.io/pypi/v/BenBot.svg)](https://pypi.org/project/BenBot/)
 
 ## To install BenBot enter this command into console:
-Windows: ``py -3 -m pip install BenBot``
+Windows: ``py -3 -m pip install BenBot``<br>
 Linux/macOS: ``python3 -m pip install BenBot``
 
 ## Example:
