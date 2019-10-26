@@ -4,10 +4,10 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="BenBot",
-    version="0.0.3",
+    name="BenBot-async",
+    version="0.0.1",
     author="xMistt",
-    description="Python wrapper for BenBot API.",
+    description="Asynchronous Python wrapper for BenBot API.",
     long_description_content_type="text/markdown",
     url="https://github.com/xMistt/BenBot",
     packages=setuptools.find_packages(),
@@ -17,6 +17,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-          'requests',
+          'aiohttp',
       ],
 )
