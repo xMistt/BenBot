@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="BenBot-async",
+    name="BenBotAsync",
     version="0.0.1",
     author="xMistt",
     description="Asynchronous Python wrapper for BenBot API.",
