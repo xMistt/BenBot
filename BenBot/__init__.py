@@ -1,5 +1,6 @@
 import aiohttp
 name = 'BenBotAsync'
+version = '0.0.4'
 
 BEN_BOT = 'http://benbotfn.tk:8080/api/'
 
@@ -124,4 +125,24 @@ async def getEmoteId(search):
             benResponse = await r.json()
             for cosmetic in benResponse:
                 if cosmetic['type'] == 'Emote':
+                    return cosmetic['id']
+
+# Gets cosmetic with type Pet.
+
+async def getPet(search):
+    url = BEN_BOT + 'cosmetics/search/multiple?displayName=' + search
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as r:
+            benResponse = await r.json()
+            for cosmetic in benResponse:
+                if cosmetic['backendType'] == 'AthenaPetCarrier':
+                    return cosmetic
+
+async def getPetId(search):
+    url = BEN_BOT + 'cosmetics/search/multiple?displayName=' + search
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as r:
+            benResponse = await r.json()
+            for cosmetic in benResponse:
+                if cosmetic['backendType'] == 'AthenaPetCarrier':
                     return cosmetic['id']
