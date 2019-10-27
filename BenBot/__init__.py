@@ -99,3 +99,19 @@ def getEmoteId(search):
     for cosmetic in benResponse:
         if cosmetic['type'] == 'Emote':
             return cosmetic['id']
+
+# Gets cosmetic with type Pet.
+
+def getPet(search):
+    url = BEN_BOT + 'cosmetics/search/multiple?displayName=' + search
+    benResponse = requests.get(url).json()
+    for cosmetic in benResponse:
+        if cosmetic['backendType'] == 'AthenaPetCarrier':
+            return cosmetic
+
+def getPetId(search):
+    url = BEN_BOT + 'cosmetics/search/multiple?displayName=' + search
+    benResponse = requests.get(url).json()
+    for cosmetic in benResponse:
+        if cosmetic['backendType'] == 'AthenaPetCarrier':
+            return cosmetic['id']
