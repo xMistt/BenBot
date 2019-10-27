@@ -5,9 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="BenBot",
-    version="0.0.3",
+    version="0.0.4",
     author="xMistt",
     description="Python wrapper for BenBot API.",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/xMistt/BenBot",
     packages=setuptools.find_packages(),
